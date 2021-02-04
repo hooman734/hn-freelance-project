@@ -141,8 +141,8 @@ class Tabular extends Component {
                       return Tabular.sortHandler(y[sortKey], x[sortKey]);
                     }
                   })
-                  .map((x) => (
-                    <tr>
+                  .map((x, i) => (
+                    <tr key={i}>
                       <td>{x.store}</td>
                       <td>{x.name}</td>
                       <td>{x.initialPrice}</td>
