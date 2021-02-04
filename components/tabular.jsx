@@ -43,8 +43,9 @@ class Tabular extends Component {
   };
 
   setLimitHandler = (limit) => {
-    this.setState({ limit });
-    this.loadData();
+    this.setState({ limit }, () => {
+      this.loadData();
+    });
   };
 
   static sortHandler(x, y) {
