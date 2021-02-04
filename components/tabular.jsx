@@ -80,7 +80,7 @@ class Tabular extends Component {
                   type="button"
                   data-toggle="dropdown"
                 >
-                  Set Limit
+                  Set Limit {" "}
                   <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu">
